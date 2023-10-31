@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class User_model extends CI_Model {
  
-    public function loginUser($data)
+    public function registerUser($data)
     {
         return $this->db->get_where('users', array('email' => $email, 'password' => $password))->result();
     }
